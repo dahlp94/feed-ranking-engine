@@ -1,0 +1,39 @@
+seed: 0
+
+sim:
+  n_users: 2000
+  n_posts: 5000
+  n_authors: 800
+  n_topics: 20
+  days: 14
+  impressions_per_user_per_day: 30
+
+  # user taste dynamics (higher => tastes shift faster)
+  taste_drift: 0.03
+
+  # click model
+  base_ctr: 0.02
+  w_topic_match: 1.8
+  w_freshness: 0.35
+  w_popularity: 0.25
+  w_follow_author: 0.8
+
+  # impression generation
+  candidate_pool_size: 400     # what the simulator "shows" as impressions per session
+  sessions_per_user_per_day: 2
+
+split:
+  train_days: 10
+  val_days: 2
+  test_days: 2
+
+baseline:
+  w_popularity_24h: 0.55
+  w_freshness: 0.35
+  w_follow: 0.10
+  retrieval_k: 500
+  rank_k: 100
+
+eval:
+  k_list: [10, 50, 100]
+  report_path: outputs/baseline_report.json
