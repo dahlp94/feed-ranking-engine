@@ -155,7 +155,7 @@ This baseline represents a **business-as-usual heuristic feed** and provides a l
 
 ## Baseline Results
 
-Evaluated on ~50k sessions with time-based train/validation/test splits:
+Evaluated on ~50k sessions with time-based train/validation/test splits from a representative local run:
 
 ```
 Validation:
@@ -181,7 +181,7 @@ Before introducing learned models, the simulator and baseline are validated with
 
 ### Session-Level Engagement
 
-From `outputs/diagnostics_summary.json`:
+Summary from a representative local run:
 
 * Mean session CTR ≈ **1.24%**
 * Median session CTR ≈ **1.25%**
@@ -238,9 +238,7 @@ feed-ranking-engine/
 ├── scripts/
 │   ├── run_baseline_eval.py
 │   └── run_diagnostics.py
-├── outputs/
-│   ├── baseline_report.json
-│   ├── diagnostics_summary.json
+├── assets/
 │   └── figures/
 │       ├── ctr_distribution.png
 │       ├── popularity_vs_clicks.png
@@ -270,11 +268,7 @@ python -m scripts.run_baseline_eval
 python -m scripts.run_diagnostics
 ```
 
-Outputs are written to:
-
-* `outputs/baseline_report.json`
-* `outputs/diagnostics_summary.json`
-* `outputs/figures/`
+*(Figures used in the README are copied into `assets/figures/` for documentation.)*
 
 ---
 
