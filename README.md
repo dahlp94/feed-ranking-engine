@@ -208,9 +208,9 @@ CTR by author-follow status:
 This validates meaningful behavioral structure while preserving room for learning.
 
 <p align="center">
-  <img src="outputs/figures/ctr_distribution.png" width="30%">
-  <img src="outputs/figures/popularity_vs_clicks.png" width="30%">
-  <img src="outputs/figures/follow_bonus_effect.png" width="30%">
+  <img src="assets/figures/ctr_distribution.png" width="30%">
+  <img src="assets/figures/popularity_vs_clicks.png" width="30%">
+  <img src="assets/figures/follow_bonus_effect.png" width="30%">
 </p>
 
 ---
