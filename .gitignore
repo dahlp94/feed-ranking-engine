@@ -1,2 +1,6 @@
 __pycache__/
 *.py[cod]
+
+# Ignore images and data files
+*.png
+*.json
