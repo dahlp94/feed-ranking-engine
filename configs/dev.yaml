@@ -37,3 +37,26 @@ baseline:
 eval:
   k_list: [10, 50, 100]
   report_path: outputs/baseline_report.json
+
+covisitation:
+  # existing
+  max_neighbors_per_item: 200
+  topk_per_history_item: 100
+  max_history_items: 20
+  retrieval_k: 500
+  use_clicked_only: false # true = build from clicked items; false = use all impressions
+
+  # NEW: speed controls
+  max_items_per_session: 60     # cap items used from each session
+  session_pair_window: 10       # only pair within +/- window (order-based)
+  downsample_impressions: true  # randomly sample max_items_per_session impressions
+
+topic_retrieval:
+  max_history_items: 50
+  retrieval_k: 500
+  top_topics: 3
+  exploration_frac: 0.10
+  topic_boost: 1.0
+  recency_boost: 0.15
+  popularity_boost: 0.15
+
